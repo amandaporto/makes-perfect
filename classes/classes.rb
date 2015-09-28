@@ -23,8 +23,9 @@ class Dog
 end
 
 class BigDog < Dog
-  def bark
-    return "WOOF!"
+  def initialize(name)
+    super
+    @loud_or_soft = :loud
   end
 
   def greet(animal)
